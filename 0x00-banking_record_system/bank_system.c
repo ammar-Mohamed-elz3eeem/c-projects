@@ -37,33 +37,14 @@ void make_operation(int arr_size)
 	printf("Please choose one of the following operations\n");
 	printf("(1) Add Another account\n");
 	printf("(2) Delete existing account\n");
-	printf("(3) update account\n");
-	printf("(4) search for an account\n");
+	printf("(3) search for an account\n");
+	printf("(4) update account\n");
 	printf("Just enter number of operation: 1 or 2 or 3 or 4: ");
 
 	readstring(str, 2);
 	choice = atoi(str);
 
 	run_operation(choice, arr_size);
-
-	// switch (choice)
-	// {
-	// case 1:
-	// 	printf("you choice is to add new account\n");
-	// 	break;
-	// case 2:
-	// 	printf("your choice is to delete an account\n");
-	// 	break;
-	// case 3:
-	// 	printf("your choice is to update an account\n");
-	// 	break;
-	// case 4:
-	// 	printf("your choice is to search for an account\n");
-	// 	break;
-	// default:
-	// 	printf("invalid option, please choose one of the following numbers: (1, 2, 3, 4) \n");
-	// 	break;
-	// }
 }
 
 void run_operation(int op_code, int arr_size)
