@@ -12,15 +12,19 @@ account_t *add_record(char *acc_number, int arr_size)
 	if (account == NULL)
 		return NULL;
 
+	printf("Enter the new Account Number: ");
 	l = _getvalue(buff, len, 0);
 	strncpy(account->account_number, buff, l);
 
+	printf("Enter the new Account First Name: ");
 	l = _getvalue(buff, len, 0);
 	strncpy(account->first_name, buff, l - 1);
 
+	printf("Enter the new Account Last Name: ");
 	l = _getvalue(buff, len, 0);
 	strncpy(account->last_name, buff, l - 1);
 
+	printf("Enter the new Account Balance: ");
 	l = _getvalue(buff, len, 1);
 	account->balance = atof(buff);
 
